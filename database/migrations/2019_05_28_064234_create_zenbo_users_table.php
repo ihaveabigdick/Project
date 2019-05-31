@@ -25,6 +25,9 @@ class CreateZenboUsersTable extends Migration
                 ->collation('utf8_unicode_ci');
             $table->integer('restaurantsId')->unsigned()
                 ->comment('餐廳ＩＤ');
+            $table->boolean('isDelete')
+                ->default(0)
+                ->comment('是否刪除');
             $table->timestamps();
 
 

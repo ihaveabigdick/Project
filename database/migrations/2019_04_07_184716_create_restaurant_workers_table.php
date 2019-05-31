@@ -21,6 +21,9 @@ class CreateRestaurantWorkersTable extends Migration
                 ->comment("餐廳編號");
             $table->integer('userId')->unsigned()
                 ->comment('使用者編號');
+            $table->boolean('isDelete')
+                ->default(0)
+                ->comment('是否刪除');
             $table->timestamps();
 
             $table->foreign('restaurantId')

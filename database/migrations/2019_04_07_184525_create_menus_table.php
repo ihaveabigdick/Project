@@ -31,6 +31,9 @@ class CreateMenusTable extends Migration
                 ->collation('utf8_unicode_ci');
             $table->integer('fileUploadId')->unsigned()
                 ->comment('檔案ＩＤ');
+            $table->boolean('isDelete')
+                ->default(0)
+                ->comment('是否刪除');
             $table->timestamps();
 
             $table->foreign('restaurantId')

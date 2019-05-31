@@ -39,6 +39,9 @@ class CreateUsersTable extends Migration
                 ->nullable()
                 ->comment('權限')
                 ->collation('utf8_unicode_ci');
+            $table->boolean('isDelete')
+                ->default(0)
+                ->comment('是否刪除');
 //            $table->integer('fileUploadId')->unsigned()
 //                ->comment('檔案id');
             $table->timestamps();
