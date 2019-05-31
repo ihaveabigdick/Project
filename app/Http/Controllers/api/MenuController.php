@@ -15,6 +15,7 @@ class MenuController extends Controller
         $menumodel = new Menu();
 
         $menumodel->restaurantId = $request->get('restaurantId');
+        $menumodel->menuType = $request->get('menuType');
         $menumodel->name = $request->get('name');
         $menumodel->price = $request->get('price');
         $menumodel->msg = $request->get('msg');
