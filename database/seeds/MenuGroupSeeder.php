@@ -21,7 +21,7 @@ class MenuGroupSeeder extends Seeder
             ['type'=>'主餐類','created_at'=>Carbon::now(),'updated_at'=>Carbon::now()],
             ['type'=>'點心類','created_at'=>Carbon::now(),'updated_at'=>Carbon::now()],
             ['type'=>'熱烤類','created_at'=>Carbon::now(),'updated_at'=>Carbon::now()],
-            ['type'=>'大便類dd','created_at'=>Carbon::now(),'updated_at'=>Carbon::now()]
+            ['type'=>'飲料類','created_at'=>Carbon::now(),'updated_at'=>Carbon::now()]
         ]);
     }
 }
