@@ -71,4 +71,18 @@ class MenuController extends Controller
 
     }
 
+    function Delete($id=null){
+        if ($id == null)
+            return ResponseModel::onFail('刪除失敗');
+
+        $menuModel = new Menu();
+        $menuModel = $menuModel
+            ->where('id',$id)
+            ->first();
+
+        $menuModel->isDelete= 1;
+        $menuModel->save();
+        return ResponseModel::onSuccess('刪除成功');
+    }
+
 }
