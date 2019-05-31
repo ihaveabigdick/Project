@@ -51,4 +51,24 @@ class MenuController extends Controller
 
     }
 
+    function update(Request $request, $id){
+        if ($id == null)
+            return ResponseModel::onFail();
+        $menuModel = new Menu();
+        $menuModel = $menuModel
+            ->where('id',$id)
+            ->first();
+
+        $menuModel->name=$request->get('name',$menuModel->name);
+        $menuModel->price=$request->get('price',$menuModel->price);
+        $menuModel->menuType=$request->get('menuType',$menuModel->menuType);
+        $menuModel->msg=$request->get('msg',$menuModel->msg);
+        $menuModel->save();
+        return ResponseModel::onSuccess($menuModel);
+
+
+
+
+    }
+
 }

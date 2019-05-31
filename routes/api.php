@@ -26,6 +26,7 @@ Route::get('/file/{id}','Api\FileUploadController@file');
 
 Route::post('/menu','Api\MenuController@create');
 Route::get('/menus','Api\MenuController@getAll');
+Route::put('/menu/{id}','Api\MenuController@update');
 
 Route::get('/fcmup','Api\FcmController@fcmupdate');
 
