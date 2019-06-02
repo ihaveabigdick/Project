@@ -37,15 +37,18 @@ class MenuController extends Controller
             ->offset($basePagination->perPage*$basePagination->currentPage)
             ->limit($basePagination->perPage)
             ->where('menus.isDelete',false)
+            ->join('menu_groups','menu_groups.id','menuType')
             ->select(
+                'menus.id',
+                'menus.id',
                 'menus.restaurantId',
-                'menus.menuType',
+                'menu_groups.type as menuType',
                 'menus.name',
                 'menus.price',
                 'menus.msg'
             );
-        if($request->get('menuType')!=null)
-            $menuModel=$menuModel->where('menuType',$request->get('menuType'));
+//        if($request->get('menuType')!=null)
+//            $menuModel=$menuModel->where('menuType',$request->get('menuType'));
 
         return ResponseModel::onSuccessWithPage($menuModel->get(),new Pagination($request,$menuModel->count()));
 
