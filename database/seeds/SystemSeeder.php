@@ -15,8 +15,8 @@ class SystemSeeder extends Seeder
     {
         //
         //
-        $authSystemModel = new System();
-        $authSystemModel->insert([
+        $systemModel = new System();
+        $systemModel->insert([
             ['name'=>"經理功能",'created_at' => Carbon::now(),'updated_at' => Carbon::now()],
             ['name'=>"收銀員功能",'created_at' => Carbon::now(),'updated_at' => Carbon::now()],
         ]);
