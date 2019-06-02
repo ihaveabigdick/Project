@@ -17,6 +17,8 @@ class DatabaseSeeder extends Seeder
          $this->call(SexTableSeeder::class);
          $this->call(RestaurantsSeeder::class);
          $this->call(MenuGroupSeeder::class);
+         $this->call(SystemSeeder::class);
+
 
     }
 }

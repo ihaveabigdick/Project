@@ -68,10 +68,6 @@ class MenuController extends Controller
         $menuModel->msg=$request->get('msg',$menuModel->msg);
         $menuModel->save();
         return ResponseModel::onSuccess($menuModel);
-
-
-
-
     }
 
     function Delete($id=null){

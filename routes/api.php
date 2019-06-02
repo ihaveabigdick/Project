@@ -30,6 +30,9 @@ Route::put('/menu/{id}','Api\MenuController@update');
 Route::delete('/menu/{id}','Api\MenuController@Delete');
 
 Route::post('/restaurant','Api\RestaurantController@create');
+Route::get('/restaurants','Api\RestaurantController@getAll');
+Route::put('/restaurant/{id}','Api\RestaurantController@update');
+Route::delete('/restaurant/{id}','Api\RestaurantController@Delete');
 
 Route::get('/fcmup','Api\FcmController@fcmupdate');
 
