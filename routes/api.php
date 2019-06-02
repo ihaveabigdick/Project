@@ -29,6 +29,8 @@ Route::get('/menus','Api\MenuController@getAll');
 Route::put('/menu/{id}','Api\MenuController@update');
 Route::delete('/menu/{id}','Api\MenuController@Delete');
 
+Route::post('/restaurant','Api\RestaurantController@create');
+
 Route::get('/fcmup','Api\FcmController@fcmupdate');
 
 Route::get('/cyut','Api\Cyut@index');
