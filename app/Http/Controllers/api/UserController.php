@@ -73,7 +73,8 @@ class UserController extends Controller
 
 
     function update(Request $request,$id=null){
-        if ($id == null)  return '請輸入資料';
+        if ($id == null)
+            return ResponseModel::onFail('請輸入資料');
         //驗證使用者
         $noticeboardModel = new User();
         $data=$noticeboardModel
