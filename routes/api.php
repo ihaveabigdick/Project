@@ -36,7 +36,9 @@ Route::delete('/restaurant/{id}','Api\RestaurantController@Delete');
 
 Route::post('/restaurantworker','Api\RestaurantWorkerController@create');
 Route::get('/restaurantworker','Api\RestaurantWorkerController@getAll');
+Route::get('/restaurantworker/{id}','Api\RestaurantWorkerController@get');
 Route::put('/restaurantworker/{id}','Api\RestaurantWorkerController@update');
+Route::delete('/restaurantworker/{id}','Api\RestaurantWorkerController@Delete');
 
 
 

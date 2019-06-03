@@ -38,10 +38,12 @@ class MenuController extends Controller
             ->limit($basePagination->perPage)
             ->where('menus.isDelete',false)
             ->join('menu_groups','menu_groups.id','menuType')
+            ->join('restaurants','restaurants.id','restaurantId')
+
             ->select(
                 'menus.id',
                 'menus.id',
-                'menus.restaurantId',
+                'restaurants.name as restaurantId',
                 'menu_groups.type as menuType',
                 'menus.name',
                 'menus.price',
@@ -70,18 +72,18 @@ class MenuController extends Controller
         return ResponseModel::onSuccess($menuModel);
     }
 
-    function Delete($id=null){
+    function Delete(Request $request, $id){
         if ($id == null)
             return ResponseModel::onFail('刪除失敗');
 
         $menuModel = new Menu();
         $menuModel = $menuModel
-            ->where('id',$id)
+            ->where('menus.id', $id)
             ->first();
 
         $menuModel->isDelete= 1;
         $menuModel->save();
-        return ResponseModel::onSuccess('刪除成功');
+        return ResponseModel::onSuccess($menuModel,'刪除成功');
     }
 
 }
