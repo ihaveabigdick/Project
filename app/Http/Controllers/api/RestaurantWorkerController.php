@@ -57,6 +57,31 @@ class RestaurantWorkerController extends Controller
         return ResponseModel::onSuccessWithPage($restaurantWorker->get(),new Pagination($request,$restaurantWorker->count()));
     }
 
+    function get(Request $request ,$id){
+        if ($id == null)
+            return ResponseModel::onFail('請輸入資料');
+        $restaurantWorker = new RestaurantWorker();
+        $restaurantWorker = $restaurantWorker
+            ->where('restaurant_workers.id' , $id)
+            ->join('restaurants','restaurants.id','restaurantId')
+            ->join('systems','systems.id','systemId')
+            ->join('sexes','sexes.id','sex')
+            ->select(
+                'restaurant_workers.id',
+                'restaurants.name as restaurantId',
+                'systems.name as systemId',
+                'restaurant_workers.account',
+                'restaurant_workers.password',
+                'restaurant_workers.name',
+                'restaurant_workers.sid',
+                'sexes.name as sex',
+                'restaurant_workers.email',
+                'restaurant_workers.phone'
+            )
+            ->first();
+        return ResponseModel::onSuccess($restaurantWorker) ;
+    }
+
     function update(Request $request, $id){
         if ($id == null)
             return ResponseModel::onFail('請輸入資料');
@@ -79,17 +104,17 @@ class RestaurantWorkerController extends Controller
         return ResponseModel::onSuccess($restaurantWorker);
 
     }
-    function Delete($id=null){
+    function Delete(Request $request, $id){
         if ($id == null)
             return ResponseModel::onFail('刪除失敗');
 
-        $restaurantWorker = new Restaurant();
+        $restaurantWorker = new RestaurantWorker();
         $restaurantWorker = $restaurantWorker
-            ->where('id',$id)
+            ->where('restaurant_workers.id', $id)
             ->first();
 
-        $restaurantWorker->isDelete= 1;
+        $restaurantWorker->isDelete = 1;
         $restaurantWorker->save();
-        return ResponseModel::onSuccess('刪除成功');
+        return ResponseModel::onSuccess($restaurantWorker,'刪除成功');
     }
 }
