@@ -52,7 +52,7 @@ class UserController extends Controller
     }
     //
 
-    function get(Request $request,$id=null){
+    function get($id){
         $userModel = new User();
 
         $data = $userModel

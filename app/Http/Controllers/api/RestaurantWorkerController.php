@@ -57,7 +57,7 @@ class RestaurantWorkerController extends Controller
         return ResponseModel::onSuccessWithPage($restaurantWorker->get(),new Pagination($request,$restaurantWorker->count()));
     }
 
-    function get(Request $request ,$id){
+    function get($id){
         if ($id == null)
             return ResponseModel::onFail('請輸入資料');
         $restaurantWorker = new RestaurantWorker();
@@ -104,7 +104,8 @@ class RestaurantWorkerController extends Controller
         return ResponseModel::onSuccess($restaurantWorker);
 
     }
-    function Delete(Request $request, $id){
+
+    function Delete($id){
         if ($id == null)
             return ResponseModel::onFail('刪除失敗');
 
