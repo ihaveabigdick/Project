@@ -34,6 +34,13 @@ Route::get('/restaurants','Api\RestaurantController@getAll');
 Route::put('/restaurant/{id}','Api\RestaurantController@update');
 Route::delete('/restaurant/{id}','Api\RestaurantController@Delete');
 
+Route::post('/restaurantworker','Api\RestaurantWorkerController@create');
+Route::get('/restaurantworker','Api\RestaurantWorkerController@getAll');
+Route::put('/restaurantworker/{id}','Api\RestaurantWorkerController@update');
+
+
+
+
 Route::get('/fcmup','Api\FcmController@fcmupdate');
 
 Route::get('/cyut','Api\Cyut@index');
