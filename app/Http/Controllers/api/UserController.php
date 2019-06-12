@@ -58,8 +58,13 @@ class UserController extends Controller
 
     function create(Request $request){
 
-        if ($request->account or $request->passowrd or $request->name == null)
-            return ResponseModel::onFail('請輸入資料');
+        $validator = Validator::make($request->all(),[
+            'account'=> 'required',
+            'password'=>'required',
+            'name'=>'required',
+        ]);
+        if($validator->fails())
+            return ResponseModel::onFail('資料異常',ResponseModel::$DEFECT,$validator->errors());
 
         //驗證帳號是否已被註冊
         $userModel = new User();
