@@ -58,7 +58,7 @@ class UserController extends Controller
 
     function create(Request $request){
 
-        if ($request->account or $request->passowrd or $request->name == null)
+        if ($request->account or $request->password or $request->name == null)
             return ResponseModel::onFail('請輸入資料');
 
         //驗證帳號是否已被註冊
