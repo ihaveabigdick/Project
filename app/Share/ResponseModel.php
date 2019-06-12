@@ -27,6 +27,7 @@ class ResponseModel
     public static $UNKNOWN=400; //失敗原因不明
     public static $NO_PERMISSIONS = 404;//權限不足
     public static $DEFECT = 405; //缺少屬性
+    public static $NO_SEARCH = 401;//找不到資訊
 
 
     public static  function onSuccess($data, string $msg='成功', int $code=200){
