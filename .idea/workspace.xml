@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e63178ad-3973-44ae-a401-eea7fa20382c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/api/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/api/UserController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="332">
+              <caret line="66" column="46" selection-start-line="66" selection-start-column="42" selection-end-line="66" selection-end-column="46" />
               <folding>
                 <element signature="e#256#769#0#PHP" />
                 <element signature="e#299#311#0#PHP" />
@@ -438,7 +437,7 @@
       <workItem from="1559573305854" duration="1414000" />
       <workItem from="1559825475033" duration="650000" />
       <workItem from="1560311931014" duration="435000" />
-      <workItem from="1560358730601" duration="1279000" />
+      <workItem from="1560358730601" duration="2235000" />
     </task>
     <task id="LOCAL-00001" summary="first update">
       <created>1559274936170</created>
@@ -580,11 +579,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560360610573</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="for ios">
+      <created>1560361350514</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1560361350514</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79452000" />
+    <option name="totallyTimeSpent" value="80408000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -989,8 +995,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        <state relative-caret-position="332">
+          <caret line="66" column="46" selection-start-line="66" selection-start-column="42" selection-end-line="66" selection-end-column="46" />
           <folding>
             <element signature="e#256#769#0#PHP" />
             <element signature="e#299#311#0#PHP" />
