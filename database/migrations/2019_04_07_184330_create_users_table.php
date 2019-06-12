@@ -28,11 +28,14 @@ class CreateUsersTable extends Migration
                 ->comment('姓名')
                 ->collation('utf8_unicode_ci');
             $table->integer('sex')
+                ->nullable()
                 ->comment('性別');
             $table->string('email',50)
+                ->nullable()
                 ->comment('電子信箱')
                 ->collation('utf8_unicode_ci');
             $table->string('phone')
+                ->nullable()
                 ->comment('電話')
                 ->collation('utf8_unicode_ci');
             $table->string('token',80)
