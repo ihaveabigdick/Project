@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e63178ad-3973-44ae-a401-eea7fa20382c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e63178ad-3973-44ae-a401-eea7fa20382c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,48 +36,49 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/FileUploadController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-941" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/fileUpload/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="210">
+              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+              <folding>
+                <element signature="e#44#69#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/seeds/fileUpload.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/RestaurantController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
+            <state relative-caret-position="975">
+              <caret line="72" column="24" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
+              <folding>
+                <element signature="e#44#63#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/channels.php">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="68" column="47" lean-forward="true" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
+            <state relative-caret-position="299">
+              <caret line="66" column="93" lean-forward="true" selection-start-line="60" selection-start-column="7" selection-end-line="66" selection-end-column="93" />
               <folding>
-                <element signature="e#44#80#0#PHP" expanded="true" />
+                <element signature="e#256#769#0#PHP" />
+                <element signature="e#299#311#0#PHP" />
+                <element signature="e#360#435#0#PHP" />
+                <element signature="e#360#566#0#PHP" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Share/ResponseModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -87,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
+            <state relative-caret-position="159">
+              <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -96,28 +95,61 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_07_184330_create_users_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+            <state relative-caret-position="630">
+              <caret line="44" column="39" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/robots.txt">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/Cyut.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/fileUpload/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.php">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/console.php">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/database/seeds/MenuSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="22" column="127" selection-start-line="22" selection-start-column="127" selection-end-line="22" selection-end-column="127" />
+              <folding>
+                <element signature="e#7#26#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>login</find>
       <find>insert</find>
+      <find>0</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -129,11 +161,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2019_04_07_184419_create_restaurants_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_07_184618_create_menu_packages_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_07_184630_create_menu_package_infos_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_07_184650_create_order_infos_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_04_07_184716_create_restaurant_workers_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_07_184724_create_sexes_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/api/Cyut.php" />
         <option value="$PROJECT_DIR$/app/model/User.php" />
@@ -141,33 +171,41 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_04_07_184308_create_file_uploads_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/User.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_07_184443_create_orders_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_04_07_184330_create_users_table.php" />
         <option value="$PROJECT_DIR$/app/Sex.php" />
         <option value="$PROJECT_DIR$/app/model/Sex.php" />
         <option value="$PROJECT_DIR$/database/seeds/Sex.php" />
         <option value="$PROJECT_DIR$/database/seeds/SexTableSeeder.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/api/FcmController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_07_184459_create_fcms_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_05_28_064234_create_zenbo_users_table.php" />
-        <option value="$PROJECT_DIR$/database/seeds/RestaurantsSeeder.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/api/MenuController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_07_184524_menu_group.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_07_184506_create_fcm_infos_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_07_184524_menu_groups.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_04_07_184525_create_menus_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/api/FileUploadController.php" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/database/seeds/fileUpload.php" />
         <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/api/FcmController.php" />
         <option value="$PROJECT_DIR$/database/seeds/MenuGroupSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/SystemSeeder.php" />
+        <option value="$PROJECT_DIR$/app/Share/Pagination/Pagination.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_04_07_184525_create_menus_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_05_28_064234_create_zenbo_users_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_04_07_184419_create_restaurants_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_04_07_184715_create_systems_table.php" />
+        <option value="$PROJECT_DIR$/database/seeds/SystemㄋSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/SystemsSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/ststemsSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/Menu.php" />
-        <option value="$PROJECT_DIR$/database/seeds/kdkq.php" />
+        <option value="$PROJECT_DIR$/database/seeds/SystemSeeder.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/api/RestaurantWorkController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_04_07_184716_create_restaurant_workers_table.php" />
+        <option value="$PROJECT_DIR$/database/seeds/RestaurantsSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/MenuSeeder.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/api/RestaurantController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/api/MenuController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/api/RestaurantWorkerController.php" />
+        <option value="$PROJECT_DIR$/resources/views/index.blade.html" />
         <option value="$PROJECT_DIR$/resources/views/fileUpload/index.blade.php" />
-        <option value="$PROJECT_DIR$/database/seeds/fileUpload.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_04_07_184330_create_users_table.php" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/app/Share/ResponseModel.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/api/UserController.php" />
       </list>
     </option>
@@ -256,9 +294,11 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="180" />
+    <option name="y" value="125" />
+    <option name="width" value="1080" />
+    <option name="height" value="612" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -309,35 +349,17 @@
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="factories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
               <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="seeds" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -346,8 +368,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="ChangesTree.GroupingKeys" value="directory" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -402,30 +424,185 @@
       <workItem from="1559204308022" duration="22000" />
       <workItem from="1559204366587" duration="63000" />
       <workItem from="1559204440075" duration="833000" />
-      <workItem from="1559274034288" duration="647000" />
-      <workItem from="1559488741638" duration="672000" />
-      <workItem from="1559489531566" duration="3446000" />
-      <workItem from="1559550929771" duration="6674000" />
+      <workItem from="1559274034288" duration="2211000" />
+      <workItem from="1559291897649" duration="9000" />
+      <workItem from="1559292089248" duration="332000" />
+      <workItem from="1559292578628" duration="526000" />
+      <workItem from="1559322053707" duration="286000" />
+      <workItem from="1559394806488" duration="15569000" />
+      <workItem from="1559561368419" duration="2659000" />
+      <workItem from="1559565074960" duration="1210000" />
+      <workItem from="1559573305854" duration="1414000" />
+      <workItem from="1559825475033" duration="650000" />
+      <workItem from="1560311931014" duration="435000" />
+      <workItem from="1560358730601" duration="2460000" />
     </task>
-    <task id="LOCAL-00001" summary="一樣是測試">
-      <created>1559293191375</created>
+    <task id="LOCAL-00001" summary="first update">
+      <created>1559274936170</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1559293191375</updated>
+      <updated>1559274936170</updated>
     </task>
-    <task id="LOCAL-00002" summary="一樣是測試">
-      <created>1560361673999</created>
+    <task id="LOCAL-00002" summary="just test">
+      <created>1559292918943</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1560361673999</updated>
+      <updated>1559292918943</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="just test">
+      <created>1559293011254</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1559293011254</updated>
+    </task>
+    <task id="LOCAL-00004" summary="menu controller add type">
+      <created>1559314716358</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1559314716358</updated>
+    </task>
+    <task id="LOCAL-00005" summary="menu controller add method getAll">
+      <created>1559317449646</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1559317449646</updated>
+    </task>
+    <task id="LOCAL-00006" summary="menu controller add method update">
+      <created>1559318780107</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1559318780107</updated>
+    </task>
+    <task id="LOCAL-00007" summary="menu controller add method delete">
+      <created>1559322139464</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1559322139464</updated>
+    </task>
+    <task id="LOCAL-00008" summary="menu controller add join in getAll">
+      <created>1559484091208</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1559484091208</updated>
+    </task>
+    <task id="LOCAL-00009" summary="menu controller add join in getAll">
+      <created>1559485478276</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1559485478276</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update restaurant staff table and seed&#10;creat system table">
+      <created>1559488256605</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1559488256605</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update restaurant staff table and seed&#10;creat system table">
+      <created>1559488501202</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1559488501202</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update restaurant staff table and seed&#10;creat system table">
+      <created>1559489402752</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1559489402752</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add restaurant Worker Controller and menu seeder">
+      <created>1559549752745</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1559549752745</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add restaurant Worker Controller and menu seeder">
+      <created>1559563573088</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1559563573088</updated>
+    </task>
+    <task id="LOCAL-00015" summary="for simple">
+      <created>1559564921928</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1559564921928</updated>
+    </task>
+    <task id="LOCAL-00016" summary="try show photo">
+      <created>1559570584819</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1559570584819</updated>
+    </task>
+    <task id="LOCAL-00017" summary="for ios">
+      <created>1560312114372</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1560312114372</updated>
+    </task>
+    <task id="LOCAL-00018" summary="for ios">
+      <created>1560360375632</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1560360375632</updated>
+    </task>
+    <task id="LOCAL-00019" summary="for ios">
+      <created>1560360595004</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1560360595004</updated>
+    </task>
+    <task id="LOCAL-00020" summary="for ios">
+      <created>1560360610573</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1560360610573</updated>
+    </task>
+    <task id="LOCAL-00021" summary="for ios">
+      <created>1560361350514</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1560361350514</updated>
+    </task>
+    <task id="LOCAL-00022" summary="for ios">
+      <created>1560362311960</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1560362311960</updated>
+    </task>
+    <task id="LOCAL-00023" summary="for ios">
+      <created>1560362364141</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1560362364141</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63532000" />
+    <option name="totallyTimeSpent" value="80633000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -437,24 +614,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.22014925" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25346112" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49520257" weight="0.23210412" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49642345" visible="true" weight="0.23663366" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.329718" />
-      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.4989339" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5035765" side_tool="true" weight="0.19156626" />
+      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49946752" weight="0.32882884" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" sideWeight="0.49928367" weight="0.32884097" />
+      <window_info anchor="bottom" id="Find" order="6" />
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" sideWeight="0.49946696" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="TODO" order="11" sideWeight="0.49893504" weight="0.32882884" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4978701" weight="0.32882884" />
       <window_info anchor="right" id="Database" order="0" weight="0.32960597" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -465,77 +642,21 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="一樣是測試" />
-    <option name="LAST_COMMIT_MESSAGE" value="一樣是測試" />
+    <MESSAGE value="first update" />
+    <MESSAGE value="just test" />
+    <MESSAGE value="menu controller add type" />
+    <MESSAGE value="menu controller add method getAll" />
+    <MESSAGE value="menu controller add method update" />
+    <MESSAGE value="menu controller add method delete" />
+    <MESSAGE value="menu controller add join in getAll" />
+    <MESSAGE value="update restaurant staff table and seed&#10;creat system table" />
+    <MESSAGE value="add restaurant Worker Controller and menu seeder" />
+    <MESSAGE value="for simple" />
+    <MESSAGE value="try show photo" />
+    <MESSAGE value="for ios" />
+    <option name="LAST_COMMIT_MESSAGE" value="for ios" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/model/Sex.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="12" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/Fcm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_07_184459_create_fcms_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="28" column="39" lean-forward="true" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_07_184443_create_orders_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_07_184419_create_restaurants_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="418" selection-start-line="418" selection-end-line="418" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="809" lean-forward="true" selection-start-line="809" selection-end-line="809" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/MenuGroups.php" />
-    <entry file="file://$PROJECT_DIR$/app/model/FileUpload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/model/FcmInfo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -543,7 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_07_184724_create_sexes_table.php" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_07_184650_create_order_infos_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -565,12 +685,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/RestaurantsSeeder.php">
+    <entry file="file://$PROJECT_DIR$/database/seeds/SexTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="255">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
           <folding>
-            <element signature="e#7#32#0#PHP" expanded="true" />
+            <element signature="e#7#25#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -582,13 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_07_184524_menu_groups.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/model/MenuGroup.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -596,208 +709,310 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_07_184525_create_menus_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/Cyut.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="7" column="8" selection-start-line="7" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/FileUploadController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-          <folding>
-            <element signature="e#44#69#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="330">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/MenuController.php">
+    <entry file="file://$PROJECT_DIR$/artisan">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
-          <folding>
-            <element signature="e#44#63#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/SexTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-          <folding>
-            <element signature="e#7#25#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/ststemsSeeder.php" />
-    <entry file="file://$PROJECT_DIR$/database/seeds/SystemSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="e#7#28#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_28_064234_create_zenbo_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Container/Container.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14915">
-          <caret line="793" column="37" selection-start-line="793" selection-start-column="37" selection-end-line="793" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/MenuGroupSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-          <folding>
-            <element signature="e#7#31#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_07_184716_create_restaurant_workers_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1235">
-          <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="70" selection-end-column="5" />
+        <state relative-caret-position="255">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/model/Menu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
+        <state relative-caret-position="90">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
+        <state relative-caret-position="90">
           <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/MenuSeeder.php">
+    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        <state relative-caret-position="-1" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Share/Pagination/BasePagination.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Share/Pagination/Pagination.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_28_064234_create_zenbo_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_07_184419_create_restaurants_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_07_184524_menu_groups.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_07_184525_create_menus_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_07_184459_create_fcms_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="28" column="39" lean-forward="true" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/RestaurantWorkController.php" />
+    <entry file="file://$PROJECT_DIR$/database/seeds/fileUpload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_07_184715_create_systems_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_07_184714_create_sexes_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_07_184716_create_restaurant_workers_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/RestaurantsSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding>
+            <element signature="e#7#32#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        <state relative-caret-position="300">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Response.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/http-foundation/BinaryFileResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/MenuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/SystemSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.html" />
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="30" selection-end-line="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Routing/ResponseFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1335">
+          <caret line="89" column="20" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/MenuGroupSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+          <folding>
+            <element signature="e#7#31#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/RestaurantWorkerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1036">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        <state relative-caret-position="135">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+          <folding>
+            <element signature="e#44#69#0#PHP" expanded="true" />
+            <element signature="e#1260#1353#0#PHP" />
+            <element signature="e#1260#1399#0#PHP" />
+            <element signature="e#1260#1456#0#PHP" />
+            <element signature="e#1260#1522#0#PHP" />
+            <element signature="e#1260#1576#0#PHP" />
+            <element signature="e#1260#1621#0#PHP" />
+            <element signature="e#1260#2053#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/img/asda.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/channels.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/FcmController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        <state relative-caret-position="240">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="e#44#62#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/console.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/channels.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/robots.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/RestaurantController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-941" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/asda.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/fileUpload/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="975">
+          <caret line="72" column="24" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
+          <folding>
+            <element signature="e#44#63#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/fileUpload.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/Cyut.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
+        <state relative-caret-position="90">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/fileUpload/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/MenuSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="127" selection-start-line="22" selection-start-column="127" selection-end-line="22" selection-end-column="127" />
+          <folding>
+            <element signature="e#7#26#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/FileUploadController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding>
+            <element signature="e#44#69#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="159">
+          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Share/ResponseModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_07_184330_create_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+        <state relative-caret-position="630">
+          <caret line="44" column="39" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="68" column="47" lean-forward="true" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
+        <state relative-caret-position="299">
+          <caret line="66" column="93" lean-forward="true" selection-start-line="60" selection-start-column="7" selection-end-line="66" selection-end-column="93" />
           <folding>
-            <element signature="e#44#80#0#PHP" expanded="true" />
+            <element signature="e#256#769#0#PHP" />
+            <element signature="e#299#311#0#PHP" />
+            <element signature="e#360#435#0#PHP" />
+            <element signature="e#360#566#0#PHP" />
           </folding>
         </state>
       </provider>
