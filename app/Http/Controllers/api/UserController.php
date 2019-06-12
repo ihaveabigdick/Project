@@ -8,12 +8,33 @@ use App\model\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Share\ResponseModel;
+use Validator;
 
 class UserController extends Controller
 {
 
 
+    function login(Request $request){
+        //驗證器
+        $validator = Validator::make($request->all(),[
+            'account'=> 'required',
+            'password'=>'required',
+        ]);
+        if($validator->fails())
+            return ResponseModel::onFail('資料異常',ResponseModel::$DEFECT,$validator->errors());
 
+        //取得資料
+        $userModel =new User();
+        $user = $userModel
+            ->where('account',$request->get('account'))
+            ->where('password',$request->get('password'))
+            ->first();
+
+        //找不到使用者
+        if($user == null)
+            return  ResponseModel::onFail('登入失敗',ResponseModel::$NO_SEARCH);
+        return ResponseModel::onSuccess(['id'=>$user->id,'authSystemId'=>$user->authSystemId]);
+    }
 
 
     function getAll(Request $request){
