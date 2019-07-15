@@ -23,7 +23,7 @@ class FCMPublish
     }
     public function publish($token,$data,$serviceId,$onSuccess = null,$onFile = null){
         $notification = [
-            'title' => 'foodway系統推播通知',
+            'title' => 'Zenbo餐廳系統推播通知',
             'body' =>$data,
             'sound' => true,
             'click_action'=>'FCM_PLUGIN_ACTIVITY'
@@ -31,7 +31,7 @@ class FCMPublish
 
         $extraNotificationData = ["message" => $notification,"serviceId" =>$serviceId];
         $client = new \GuzzleHttp\Client(['headers' =>[
-            'Authorization'=>'key=AIzaSyDYs2JTnTs0E4-uGJewsKgI-6tN9Pt7Cbk',
+            'Authorization'=>'key=AIzaSyB2RsRqHmmSwBjtEAQ2oOJ9YTbMCGjmR1Y',
             'Content-Type'=>'application/json'
         ],
             'json' => [
