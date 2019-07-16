@@ -13,6 +13,7 @@ class FcmController extends Controller
     function fcmupdate(Request $request){
         $fcm = new Fcm();
         $fcm->fcmToken = $request->get('fcmToken');
+        $fcm->tid = $request->get('tid');
         $fcm->save();
 
         return ResponseModel::onSuccess($fcm);
