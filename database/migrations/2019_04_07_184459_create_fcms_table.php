@@ -23,7 +23,7 @@ class CreateFcmsTable extends Migration
             $table->integer('userId')->unsigned()
                 ->nullable()
                 ->comment('使用者ＩＤ');
-            $table->string('fcmToken',  50)
+            $table->string('fcmToken',  500)
                 ->comment('推播金鑰')
                 ->collation('utf8_unicode_ci');
             $table->string('status',20)

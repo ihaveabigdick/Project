@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e63178ad-3973-44ae-a401-eea7fa20382c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_04_07_184459_create_fcms_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_04_07_184459_create_fcms_table.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,15 +39,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/model/test.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_01_172355_create_tests_table.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
@@ -56,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="46" column="10" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+            <state relative-caret-position="627">
+              <caret line="54" column="30" lean-forward="true" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -68,11 +59,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/FcmController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+            <state relative-caret-position="225">
+              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
               <folding>
                 <element signature="e#44#62#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_07_184459_create_fcms_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -173,7 +173,6 @@
         <option value="$PROJECT_DIR$/app/model/Sex.php" />
         <option value="$PROJECT_DIR$/database/seeds/Sex.php" />
         <option value="$PROJECT_DIR$/database/seeds/SexTableSeeder.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_04_07_184459_create_fcms_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_07_184524_menu_group.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_07_184506_create_fcm_infos_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_07_184524_menu_groups.php" />
@@ -206,8 +205,9 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/api/testController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_07_01_172355_create_tests_table.php" />
         <option value="$PROJECT_DIR$/app/Share/FCMPublish.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/api/FcmController.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/api/FcmController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_04_07_184459_create_fcms_table.php" />
       </list>
     </option>
   </component>
@@ -454,7 +454,7 @@
       <workItem from="1562594774008" duration="731000" />
       <workItem from="1562674441743" duration="994000" />
       <workItem from="1563035942211" duration="545000" />
-      <workItem from="1563172521239" duration="2375000" />
+      <workItem from="1563172521239" duration="2823000" />
     </task>
     <task id="LOCAL-00001" summary="first update">
       <created>1559274936170</created>
@@ -645,11 +645,25 @@
       <option name="project" value="LOCAL" />
       <updated>1563204777623</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="for ios">
+      <created>1563212081190</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1563212081190</updated>
+    </task>
+    <task id="LOCAL-00029" summary="for ios">
+      <created>1563258945010</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1563258945010</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88650000" />
+    <option name="totallyTimeSpent" value="89098000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -665,9 +679,9 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.18104367" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18104367" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49642345" visible="true" weight="0.18613862" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49642345" visible="true" weight="0.18613862" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5035765" side_tool="true" weight="0.19156626" />
       <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49946752" weight="0.32882884" />
@@ -797,13 +811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_07_184459_create_fcms_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="28" column="39" lean-forward="true" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1045,20 +1052,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="54" column="30" lean-forward="true" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/FcmController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        <state relative-caret-position="225">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
           <folding>
             <element signature="e#44#62#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_07_184459_create_fcms_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="46" column="10" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+        <state relative-caret-position="345">
+          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
         </state>
       </provider>
     </entry>
