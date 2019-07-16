@@ -18,7 +18,7 @@ class ServiceController extends Controller
         $fcc = new Fcm();
 
         $data = $fcc
-            ->where('0fcms.id',$fccId)
+            ->where('fcms.id',$fccId)
             ->select('fcns.fcmToken')
             ->get();
 
