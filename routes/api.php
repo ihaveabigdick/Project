@@ -44,6 +44,9 @@ Route::delete('/restaurantworker/{id}','Api\RestaurantWorkerController@Delete');
 Route::post('/test','Api\testController@create');
 
 
+Route::post('/service/tofcm','Api\ServiceController@tofcm');
+
+
 Route::post('/fcmup','Api\FcmController@fcmupdate');
 
 Route::get('/cyut','Api\Cyut@index');
