@@ -45,6 +45,8 @@ Route::post('/test','Api\testController@create');
 
 
 Route::post('/service/tofcm','Api\ServiceController@toFcm');
+Route::post('/service/toall','Api\ServiceController@toGroup');
+
 
 
 Route::post('/fcmup','Api\FcmController@fcmupdate');

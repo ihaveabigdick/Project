@@ -3,37 +3,42 @@
 namespace App\Http\Controllers\api;
 
 use App\model\Fcm;
+use App\model\Notification;
 use App\Share\FCMPublish;
 use App\Share\ResponseModel;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use LaravelFCM\Message\OptionsBuilder;
+use LaravelFCM\Message\PayloadDataBuilder;
+use LaravelFCM\Message\PayloadNotificationBuilder;
+use LaravelFCM\Facades\FCM as FCMAlias;
 
 class ServiceController extends Controller
 {
     //
 
-    function toFcm($fccId,$notification){
+    function toFcm(Request $request){
 
-        $token= [];
-        $fcc = new Fcm();
+        $title = $request->get('title');
+        $body = $request->get('body');
+        $noti = new Notification();
 
-        $data = $fcc
-            ->where('fcms.id',$fccId)
-            ->select('fcms.fcmToken')
-            ->get();
-
-        foreach ($data as $raw)
-        {
-            if($raw->fcmToken!=null)
-                array_push($token,$raw->fcmToken);
-        }
-        if(count($token)==0)return false;
-        $fcm = new FCMPublish();
-        $fcm->publish($token,$notification);
-        return true;
+//        $noti->toSingleDevice($token,$title,$body);
 
     }
 
+    function toGroup(Request $request){
+
+        $fcmm = new Fcm();
+
+        $title = $request->get('title');
+        $body = $request->get('body');
+        $noti = new Notification();
+
+        $noti->toMultipleDevice($fcmm,$title,$body);
+
+
+    }
 
 
 }
