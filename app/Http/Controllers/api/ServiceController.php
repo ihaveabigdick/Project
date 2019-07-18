@@ -27,8 +27,6 @@ class ServiceController extends Controller
             ->first();
         if ($checkToken == null)
             return ResponseModel::onFail('無此裝置');
-        else
-            return ResponseModel::onSuccess('傳送成功');
 
 
         $id = $request->get('id');
@@ -36,6 +34,8 @@ class ServiceController extends Controller
         $body = $request->get('body');
         $noti = new Notification();
         $noti->toSingleDevice($fcmm,$id,$title,$body);
+
+        return ResponseModel::onSuccess('推播成功');
 
     }
 
@@ -49,6 +49,7 @@ class ServiceController extends Controller
 
         $noti->toMultipleDevice($fcmm,$title,$body);
 
+        return ResponseModel::onSuccess('推播成功');
 
     }
 
