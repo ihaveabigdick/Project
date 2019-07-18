@@ -30,8 +30,6 @@ class Notification extends Model
         $token = $model
             ->where('id',$id)
             ->value('fcmToken');
-        if ($token == null)
-            return ResponseModel::onFail('無此裝置');
 
 
         $downstreamResponse = FCM::sendTo($token, $option, $notification, $data);

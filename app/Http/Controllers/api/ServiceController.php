@@ -27,6 +27,8 @@ class ServiceController extends Controller
             ->first();
         if ($checkToken == null)
             return ResponseModel::onFail('無此裝置');
+        else
+            return ResponseModel::onSuccess('傳送成功');
 
 
         $id = $request->get('id');
