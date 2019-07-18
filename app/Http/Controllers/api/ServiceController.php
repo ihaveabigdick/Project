@@ -21,6 +21,14 @@ class ServiceController extends Controller
 
         $fcmm = new Fcm();
 
+        $checkToken = $fcmm
+            ->where('id',$request->get('id'))
+            ->select('fcmToken')
+            ->first();
+        if ($checkToken == null)
+            return ResponseModel::onFail('無此裝置');
+
+
         $id = $request->get('id');
         $title = $request->get('title');
         $body = $request->get('body');
