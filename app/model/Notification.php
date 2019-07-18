@@ -28,7 +28,7 @@ class Notification extends Model
 
         $token = $model
             ->where('id',$id)
-            ->select('fcmToken')
+            ->pluck('fcmToken')
             ->get();
 
         $downstreamResponse = FCM::sendTo($token, $option, $notification, $data);
