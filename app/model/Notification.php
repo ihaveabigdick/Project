@@ -11,7 +11,7 @@ use FCM;
 class Notification extends Model
 {
     //
-    public static function toSingleDevice($token=nill,$title=null,$body=null){
+    public static function toSingleDevice($model,$id,$title=null,$body=null){
 
         $optionBuilder = new OptionsBuilder();
         $optionBuilder->setTimeToLive(60*20);
@@ -26,7 +26,10 @@ class Notification extends Model
         $notification = $notificationBuilder->build();
         $data = $dataBuilder->build();
 
-        $token = $token;
+        $token = $model
+            ->where('id',$id)
+            ->select('fcmToken')
+            ->get();
 
         $downstreamResponse = FCM::sendTo($token, $option, $notification, $data);
 

@@ -19,11 +19,13 @@ class ServiceController extends Controller
 
     function toFcm(Request $request){
 
+        $fcmm = new Fcm();
+
+        $id = $request->get('id');
         $title = $request->get('title');
         $body = $request->get('body');
         $noti = new Notification();
-        $token = 'drUpHh58o6M:APA91bHhQ_Umm7rURDb-zPBxdIQNnReluyX7ksgNo_M9CDmZNQAAQcbCwtb-bnKI28gzRyuvLigTxK9Acf41oX9m0DrEsXx6bB3s6Igx-2tAl_AmFQ-O3Mc_oaJ5MgbYhswzROhb0dcj';
-        $noti->toSingleDevice($token,$title,$body);
+        $noti->toSingleDevice($fcmm,$id,$title,$body);
 
     }
 
