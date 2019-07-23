@@ -4,6 +4,7 @@ namespace App\Http\Controllers\api;
 
 use App\model\test;
 use App\Share\ResponseModel;
+use Illuminate\Support\Facades\Input;
 use Validator;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -28,5 +29,18 @@ class testController extends Controller
 
     }
 
+
+
+    function Array(Request $request)
+    {
+        $testmd = new test;
+        $posts = json_decode($request->input('posts', ''));
+        if (is_array($posts)) {
+            $testmd->insert($posts);
+            $testmd->save();
+        }
+        return ResponseModel::onSuccess($testmd);
+
+    }
 
 }

@@ -42,6 +42,8 @@ Route::put('/restaurantworker/{id}','Api\RestaurantWorkerController@update');
 Route::delete('/restaurantworker/{id}','Api\RestaurantWorkerController@Delete');
 
 Route::post('/test','Api\testController@create');
+Route::post('/testA','Api\testController@Array');
+
 
 
 Route::post('/service/tofcm','Api\ServiceController@toFcm');

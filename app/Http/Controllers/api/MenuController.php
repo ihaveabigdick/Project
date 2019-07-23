@@ -32,6 +32,8 @@ class MenuController extends Controller
     function getAll(Request $request){
         $basePagination = new BasePagination($request);
 
+
+
         $menuModel = new Menu();
         $menuModel = $menuModel
             ->offset($basePagination->perPage*$basePagination->currentPage)
@@ -52,7 +54,7 @@ class MenuController extends Controller
 //        if($request->get('menuType')!=null)
 //            $menuModel=$menuModel->where('menuType',$request->get('menuType'));
 
-        return ResponseModel::onSuccessWithPage($menuModel->get(),new Pagination($request,$menuModel->count()));
+        return json_encode(ResponseModel::onSuccessWithPage($menuModel->get(),new Pagination($request,$menuModel->count())),JSON_UNESCAPED_UNICODE);
 
     }
 
