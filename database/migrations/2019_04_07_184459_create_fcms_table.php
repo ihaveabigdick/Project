@@ -17,12 +17,12 @@ class CreateFcmsTable extends Migration
             $table->increments('id')
                 ->autoIncrement()
                 ->comment('主鍵');
-            $table->integer('tid')
-                ->nullable()
-                ->comment('桌號');
-            $table->integer('userId')->unsigned()
-                ->nullable()
-                ->comment('使用者ＩＤ');
+//            $table->integer('tid')
+//                ->nullable()
+//                ->comment('桌號');
+//            $table->integer('userId')->unsigned()
+//                ->nullable()
+//                ->comment('使用者ＩＤ');
             $table->string('fcmToken',  500)
                 ->comment('推播金鑰')
                 ->collation('utf8_unicode_ci');
@@ -32,9 +32,9 @@ class CreateFcmsTable extends Migration
                 ->collation('utf8_unicode_ci');
             $table->timestamps();
 
-            $table->foreign('userId')
-                ->references('id')
-                ->on('users');
+//            $table->foreign('userId')
+//                ->references('id')
+//                ->on('users');
         });
     }
 

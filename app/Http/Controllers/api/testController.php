@@ -33,13 +33,22 @@ class testController extends Controller
 
     function Array(Request $request)
     {
-        $testmd = new test;
-        $posts = json_decode($request->input('posts', ''));
-        if (is_array($posts)) {
-            $testmd->insert($posts);
-            $testmd->save();
+//        $tt = new test();
+//
+////        dd($posts);
+//        $tt->name = $request['name'];
+//        $tt->save();
+
+        $test = json_decode($request->getContent(), true);
+        dd($test);
+
+        foreach($request['group'] as $id) {
+            $newId = new test();
+            $newId->name = $id;
+            $newId->save();
+//            unset($newId);
         }
-        return ResponseModel::onSuccess($testmd);
+        return ResponseModel::onSuccess($newId);
 
     }
 
