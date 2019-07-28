@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('fileUpload.index');
 });
+
+
+
+Route::view('/upload',"upload");

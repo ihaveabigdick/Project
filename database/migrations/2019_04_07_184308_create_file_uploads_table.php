@@ -17,14 +17,14 @@ class CreateFileUploadsTable extends Migration
             $table->increments('id')
                 ->autoIncrement()
                 ->comment('主鍵');
-            $table->string('realName',10)
+            $table->string('realName',100)
                 ->comment('檔案名稱')
                 ->collation("utf8_unicode_ci");
             $table->string('path',200)
                 ->nullable()
                 ->comment('檔案路徑')
                 ->collation('utf8_unicode_ci');
-            $table->string('uploadName',10)
+            $table->string('uploadName',50)
                 ->comment('上傳檔案名稱')
                 ->collation('utf8_unicode_ci');
             $table->string('uploadType')

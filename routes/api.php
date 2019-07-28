@@ -24,7 +24,7 @@ Route::delete('/user/{id}','Api\UserController@Delete');
 Route::get('/userrr','Api\UserController@index');
 
 Route::get('/file/{id}','Api\FileUploadController@fileDown');
-Route::get('/file/{id}','Api\FileUploadController@fileUpload');
+Route::post('/file','Api\FileUploadController@fileUpload');
 
 
 Route::post('/menu','Api\MenuController@create');
