@@ -25,7 +25,7 @@ Route::get('/userrr','Api\UserController@index');
 
 Route::get('/file/{id}','Api\FileUploadController@fileDown');
 Route::post('/file','Api\FileUploadController@fileUpload');
-Route::post('/file64',['middleware' =>'Cors','Api\FileUploadController@fileUploadBase64']);
+Route::post('/file64','Api\FileUploadController@fileUploadBase64');
 
 
 Route::post('/menu','Api\MenuController@create');
