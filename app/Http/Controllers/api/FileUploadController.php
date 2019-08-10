@@ -60,8 +60,7 @@ class FileUploadController extends Controller
 
         if($request->photo){
             $name = time().'.' . explode('/', explode(':', substr($request->photo, 0, strpos($request->photo, ';')))[1])[1];
-            \Image::make($request->photo)->save(public_path('img/php artisan make:middleware EnableCrossRequestMiddleware
-').$name);
+            \Image::make($request->photo)->save(public_path('img/').$name);
         }
 
 
