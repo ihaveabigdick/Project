@@ -19,7 +19,6 @@ class FileUploadController extends Controller
     function fileUpload(Request $request){
 
 
-//        後臺程式碼
         if ($request->hasFile('photo')) {
             $file = $request->file('photo');  //獲取UploadFile例項
             if ( $file->isValid()) { //判斷檔案是否有效
@@ -56,4 +55,17 @@ class FileUploadController extends Controller
 
 
     }
+
+    function fileUploadBase64(Request $request){
+
+        if($request->photo){
+            $name = time().'.' . explode('/', explode(':', substr($request->photo, 0, strpos($request->photo, ';')))[1])[1];
+            \Image::make($request->photo)->save(public_path('/img').$name);
+        }
+
+
+
+
+    }
+
 }
