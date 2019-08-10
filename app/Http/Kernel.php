@@ -24,6 +24,7 @@ class Kernel extends HttpKernel
         \Barryvdh\Cors\HandleCors::class,
 
 
+
     ];
 
     /**

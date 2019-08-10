@@ -40,6 +40,9 @@ $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
     App\Exceptions\Handler::class
 );
+$app->configure('cors');
+$app->register(Barryvdh\Cors\ServiceProvider::class);
+
 
 //$app->register(LaravelFCM\FCMServiceProvider::class);
 
