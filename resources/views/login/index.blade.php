@@ -6,15 +6,19 @@
     <title>註冊會員</title>
 </head>
 <body>
+<div class="container">
 
-@if (Session::has('msg'))
-    <div style="margin-top: 20px;">
-        <div class="alert alert-danger alert-warning" role="alert">
-            {{ session('error') }}
+@if (Session::has('error'))
+        <div class="row">
+            <div class="alert alert-warning">
+                <button type="button" class="close"
+                        data-dismiss="alert" aria-hidden="true">&times;</button>
+                <strong>通知</strong>
+                {{ session('error') }}
+            </div>
         </div>
-    </div>
-@endif
-
+    @endif
+</div>
 <form method="post" action="{{url("/api/user")}}">
     @csrf
     <table align="center" border="1">

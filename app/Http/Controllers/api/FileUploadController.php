@@ -63,20 +63,27 @@ class FileUploadController extends Controller
 
         $usermodel = New User();
         $fupmodel = New FileUpload();
-        $UID = Session::get('UID');
+        $UID = $request->session()->get('UID','2');
+
 
 
         if($request->photo){
             $name = time().'.' . explode('/', explode(':', substr($request->photo, 0, strpos($request->photo, ';')))[1])[1];
             \Image::make($request->photo)->save(public_path('img/').$name);
-
+//
             $fupmodel->uid = $UID;
             $fupmodel->realName = $name;
             $fupmodel->path = public_path('img').$name;
             $fupmodel->save();
 
-        }
+            $FID = $fupmodel->id;
+            $data = $usermodel
+                ->where('id' , $UID );
 
+            $data->update([
+                'fileUploadId' => $FID
+            ]);
+        }
 
 
 

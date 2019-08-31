@@ -94,13 +94,13 @@ class UserController extends Controller
             $userModel->save();
             $id = $userModel->id;
 
-            Session::forget('error');
-            Session::put('UID',$id);
-            return view('login.photo')->with('data',session()->get('UID'));
-        } else
-            $request->session()->put('error','密碼確認錯誤');
+            Session::flush();
 
-        return redirect()->back()->with('data',$request->session()->get('error'));
+            return \redirect()->intended('/photo')->with(Session::put('UID',$id));
+        } else
+
+
+        return redirect()->back()->with(Session::put('error','密碼輸入不一致'));
 
     }
     //
