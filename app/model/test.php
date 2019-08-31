@@ -10,5 +10,14 @@ class test extends Model
         'name' => 'array'
     ];
 
+
+    protected $table = 'tests';
+
+    protected $fillable = [
+        'age',
+        'price',
+
+    ];
+
     //
 }

@@ -17,9 +17,11 @@ class CreateTestsTable extends Migration
             $table->bigIncrements('id')
                 ->autoIncrement()
                 ->comment('ID');
-            $table->string('name',20)
-                ->comment('會員名稱')
-                ->collation('utf8_unicode_ci');
+            $table->integer('age')
+                ->comment('年齡');
+            $table->integer('price')
+                ->comment('價格');
+
             $table->timestamps();
 
 
