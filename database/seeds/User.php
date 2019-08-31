@@ -23,7 +23,7 @@ class User extends Seeder
             'email'=> 'gmail',
             'phone'=> '0800',
             'token'=>'sqqqq',
-//            'fileUploadId'=> $id,
+            'fileUploadId'=> null,
 
 
 

@@ -13,7 +13,8 @@ use App\Http\Controllers\Controller;
 class RestaurantWorkerController extends Controller
 {
     //
-    function create(Request $request){
+    function create(Request $request)
+    {
 
         $restaurantWorker = new RestaurantWorker();
 
@@ -32,17 +33,18 @@ class RestaurantWorkerController extends Controller
 
     }
 
-    function getAll(Request $request){
-        $basePagination =new BasePagination($request);
+    function getAll(Request $request)
+    {
+        $basePagination = new BasePagination($request);
 
         $restaurantWorker = new RestaurantWorker();
         $restaurantWorker = $restaurantWorker
-            ->offset($basePagination->perPage*$basePagination->currentPage)
+            ->offset($basePagination->perPage * $basePagination->currentPage)
             ->limit($basePagination->perPage)
-            ->where('restaurant_workers.isDelete',false)
-            ->join('restaurants','restaurants.id','restaurantId')
-            ->join('systems','systems.id','systemId')
-            ->join('sexes','sexes.id','sex')
+            ->where('restaurant_workers.isDelete', false)
+            ->join('restaurants', 'restaurants.id', 'restaurantId')
+            ->join('systems', 'systems.id', 'systemId')
+            ->join('sexes', 'sexes.id', 'sex')
             ->select(
                 'restaurant_workers.id',
                 'restaurants.name as restaurantId',
@@ -54,18 +56,19 @@ class RestaurantWorkerController extends Controller
                 'restaurant_workers.email',
                 'restaurant_workers.phone'
             );
-        return ResponseModel::onSuccessWithPage($restaurantWorker->get(),new Pagination($request,$restaurantWorker->count()));
+        return ResponseModel::onSuccessWithPage($restaurantWorker->get(), new Pagination($request, $restaurantWorker->count()));
     }
 
-    function get($id){
+    function get($id)
+    {
         if ($id == null)
             return ResponseModel::onFail('請輸入資料');
         $restaurantWorker = new RestaurantWorker();
         $restaurantWorker = $restaurantWorker
-            ->where('restaurant_workers.id' , $id)
-            ->join('restaurants','restaurants.id','restaurantId')
-            ->join('systems','systems.id','systemId')
-            ->join('sexes','sexes.id','sex')
+            ->where('restaurant_workers.id', $id)
+            ->join('restaurants', 'restaurants.id', 'restaurantId')
+            ->join('systems', 'systems.id', 'systemId')
+            ->join('sexes', 'sexes.id', 'sex')
             ->select(
                 'restaurant_workers.id',
                 'restaurants.name as restaurantId',
@@ -79,33 +82,35 @@ class RestaurantWorkerController extends Controller
                 'restaurant_workers.phone'
             )
             ->first();
-        return ResponseModel::onSuccess($restaurantWorker) ;
+        return ResponseModel::onSuccess($restaurantWorker);
     }
 
-    function update(Request $request, $id){
+    function update(Request $request, $id)
+    {
         if ($id == null)
             return ResponseModel::onFail('請輸入資料');
         //驗證使用者
         $restaurantWorker = new RestaurantWorker();
         $restaurantWorker = $restaurantWorker
-            ->where('id',$id)
+            ->where('id', $id)
             ->first();
 
-        $restaurantWorker->restaurantId = $request->get('restaurantId',$restaurantWorker->restaurantId);
-        $restaurantWorker->systemId = $request->get('systemId',$restaurantWorker->systemId);
-        $restaurantWorker->account = $request->get('account',$restaurantWorker->account);
-        $restaurantWorker->password = $request->get('password',$restaurantWorker->systemId);
-        $restaurantWorker->name = $request->get('name',$restaurantWorker->name);
-        $restaurantWorker->sid = $request->get('sid',$restaurantWorker->sid);
-        $restaurantWorker->sex = $request->get('sex',$restaurantWorker->sex);
-        $restaurantWorker->email = $request->get('email',$restaurantWorker->email);
-        $restaurantWorker->phone = $request->get('phone',$restaurantWorker->phone);
+        $restaurantWorker->restaurantId = $request->get('restaurantId', $restaurantWorker->restaurantId);
+        $restaurantWorker->systemId = $request->get('systemId', $restaurantWorker->systemId);
+        $restaurantWorker->account = $request->get('account', $restaurantWorker->account);
+        $restaurantWorker->password = $request->get('password', $restaurantWorker->systemId);
+        $restaurantWorker->name = $request->get('name', $restaurantWorker->name);
+        $restaurantWorker->sid = $request->get('sid', $restaurantWorker->sid);
+        $restaurantWorker->sex = $request->get('sex', $restaurantWorker->sex);
+        $restaurantWorker->email = $request->get('email', $restaurantWorker->email);
+        $restaurantWorker->phone = $request->get('phone', $restaurantWorker->phone);
         $restaurantWorker->save();
         return ResponseModel::onSuccess($restaurantWorker);
 
     }
 
-    function Delete($id){
+    function Delete($id)
+    {
         if ($id == null)
             return ResponseModel::onFail('刪除失敗');
 
@@ -116,6 +121,6 @@ class RestaurantWorkerController extends Controller
 
         $restaurantWorker->isDelete = 1;
         $restaurantWorker->save();
-        return ResponseModel::onSuccess($restaurantWorker,'刪除成功');
+        return ResponseModel::onSuccess($restaurantWorker, '刪除成功');
     }
 }

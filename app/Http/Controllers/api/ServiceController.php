@@ -17,12 +17,13 @@ class ServiceController extends Controller
 {
     //
 
-    function toFcm(Request $request){
+    function toFcm(Request $request)
+    {
 
         $fcmm = new Fcm();
 
         $checkToken = $fcmm
-            ->where('id',$request->get('id'))
+            ->where('id', $request->get('id'))
             ->select('fcmToken')
             ->first();
         if ($checkToken == null)
@@ -33,13 +34,14 @@ class ServiceController extends Controller
         $title = $request->get('title');
         $body = $request->get('body');
         $noti = new Notification();
-        $noti->toSingleDevice($fcmm,$id,$title,$body);
+        $noti->toSingleDevice($fcmm, $id, $title, $body);
 
         return ResponseModel::onSuccess('推播成功');
 
     }
 
-    function toGroup(Request $request){
+    function toGroup(Request $request)
+    {
 
         $fcmm = new Fcm();
 
@@ -47,7 +49,7 @@ class ServiceController extends Controller
         $body = $request->get('body');
         $noti = new Notification();
 
-        $noti->toMultipleDevice($fcmm,$title,$body);
+        $noti->toMultipleDevice($fcmm, $title, $body);
 
         return ResponseModel::onSuccess('推播成功');
 

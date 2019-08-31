@@ -3,9 +3,12 @@
 namespace App\Http\Controllers\api;
 
 use App\Model\FileUpload;
+use App\model\User;
 use function GuzzleHttp\Psr7\uri_for;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use mysql_xdevapi\Session;
+use PhpParser\Node\Expr\New_;
 
 class FileUploadController extends Controller
 {
@@ -58,9 +61,20 @@ class FileUploadController extends Controller
 
     function fileUploadBase64(Request $request){
 
+        $usermodel = New User();
+        $fupmodel = New FileUpload();
+        $UID = Session::get('UID');
+
+
         if($request->photo){
             $name = time().'.' . explode('/', explode(':', substr($request->photo, 0, strpos($request->photo, ';')))[1])[1];
             \Image::make($request->photo)->save(public_path('img/').$name);
+
+            $fupmodel->uid = $UID;
+            $fupmodel->realName = $name;
+            $fupmodel->path = public_path('img').$name;
+            $fupmodel->save();
+
         }
 
 

@@ -45,13 +45,14 @@ class CreateUsersTable extends Migration
             $table->boolean('isDelete')
                 ->default(0)
                 ->comment('是否刪除');
-//            $table->integer('fileUploadId')->unsigned()
-//                ->comment('檔案id');
+            $table->integer('fileUploadId')->unsigned()
+                ->nullable()
+                ->comment('檔案id');
             $table->timestamps();
 //
-//            $table->foreign('fileUploadId')
-//                ->references('id')
-//                ->on('file_uploads');
+            $table->foreign('fileUploadId')
+                ->references('id')
+                ->on('file_uploads');
         });
     }
 
