@@ -41,11 +41,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_01_172355_create_tests_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+            <state relative-caret-position="570">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
@@ -68,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
@@ -208,11 +208,11 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/api/FileUploadController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_07_184308_create_file_uploads_table.php" />
         <option value="$PROJECT_DIR$/resources/views/login/photo.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_07_01_172355_create_tests_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/User.php" />
         <option value="$PROJECT_DIR$/app/model/test.php" />
         <option value="$PROJECT_DIR$/database/seeds/TestSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_07_01_172355_create_tests_table.php" />
       </list>
     </option>
   </component>
@@ -489,14 +489,7 @@
       <workItem from="1564856122543" duration="618000" />
       <workItem from="1565335598415" duration="11760000" />
       <workItem from="1566325462884" duration="556000" />
-      <workItem from="1566544003411" duration="28000000" />
-    </task>
-    <task id="LOCAL-00025" summary="for ios">
-      <created>1562002589515</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1562002589515</updated>
+      <workItem from="1566544003411" duration="28231000" />
     </task>
     <task id="LOCAL-00026" summary="for ios">
       <created>1563175492513</created>
@@ -834,11 +827,18 @@
       <option name="project" value="LOCAL" />
       <updated>1567259633289</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="k-mean test table completed">
+      <created>1567263502228</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1567263502228</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167487000" />
+    <option name="totallyTimeSpent" value="167718000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -851,6 +851,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.21565495" />
@@ -893,7 +894,8 @@
     <MESSAGE value="for ios" />
     <MESSAGE value="update base64 function" />
     <MESSAGE value="sign in system completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="sign in system completed" />
+    <MESSAGE value="k-mean test table completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="k-mean test table completed" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Redirect.php">
@@ -1130,13 +1132,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_01_172355_create_tests_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/SexTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1197,6 +1192,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_01_172355_create_tests_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
