@@ -22,8 +22,8 @@ class FileUploadController extends Controller
     function fileUpload(Request $request){
 
 
-        if ($request->hasFile('photo')) {
-            $file = $request->file('photo');  //獲取UploadFile例項
+        if ($request->hasFile('file')) {
+            $file = $request->file('file');  //獲取UploadFile例項
             if ( $file->isValid()) { //判斷檔案是否有效
                 $fileModel = new FileUpload();
 
