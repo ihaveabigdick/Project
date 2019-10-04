@@ -69,11 +69,11 @@ class FileUploadController extends Controller
 
         if($request->photo){
             $name = time().'.' . explode('/', explode(':', substr($request->photo, 0, strpos($request->photo, ';')))[1])[1];
-            \Image::make($request->photo)->save(public_path('/identification').$name);
+            \Image::make($request->photo)->save(public_path('identification/').$name);
 //
             $fupmodel->uid = $UID;
             $fupmodel->realName = $name;
-            $fupmodel->path = public_path('identification').$name;
+            $fupmodel->path = public_path('identification/').$name;
             $fupmodel->save();
 
             $FID = $fupmodel->id;
