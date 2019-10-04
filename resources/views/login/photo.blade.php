@@ -47,7 +47,7 @@
 
         $.ajax({
             method: "POST",
-            url: "http://localhost:8000/api/file64",
+            url: "http://163.17.9.124:8002/api/file64",
             data: {photo: imgData}
         })
             .done(function () {

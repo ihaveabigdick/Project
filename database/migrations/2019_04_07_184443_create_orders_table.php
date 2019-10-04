@@ -25,6 +25,7 @@ class CreateOrdersTable extends Migration
                 ->comment('訂單狀態')
                 ->collation('utf8_unicode_ci');
             $table->string('remarks',100)
+                ->nullable()
                 ->comment('備註')
                 ->collation('utf8_unicode_ci');
             $table->timestamps();

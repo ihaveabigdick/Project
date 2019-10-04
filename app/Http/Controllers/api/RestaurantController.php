@@ -45,7 +45,7 @@ class RestaurantController extends Controller
                 'restaurants.address',
                 'restaurants.phone',
                 'restaurants.msg',
-                'restaurants.fileUploadId'
+             'restaurants.fileUploadId'
             );
         return ResponseModel::onSuccessWithPage($restaurantModel->get(),new Pagination($request,$restaurantModel->count()));
     }
