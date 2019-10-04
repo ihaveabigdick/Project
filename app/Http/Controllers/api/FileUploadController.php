@@ -40,6 +40,7 @@ class FileUploadController extends Controller
 
 
                 $file->move(public_path('/img'), $filename); //移動至指定目錄
+                return "shenboyyy1";
             }
         }
 //        $file = $request->file();
