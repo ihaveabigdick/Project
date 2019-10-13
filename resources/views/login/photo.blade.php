@@ -15,7 +15,7 @@
 <button id="btnUpload">上傳圖片</button>
 
 <canvas id="canvas" width="500" height="500"></canvas>
-<script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script type="text/javascript">
 
 
@@ -47,12 +47,12 @@
 
         $.ajax({
             method: "POST",
-            url: "http://163.17.9.124:8002/api/file64",
+            url: "https://163.17.9.124:8002/api/file64",
             data: {photo: imgData}
         })
             .done(function () {
                 alert("成功");
-                self.location.href = "http://localhost:8000/"
+                self.location.href = "https://163.17.9.124:8002/"
             }).fail(function () {
             alert("失敗");
         });
