@@ -4,6 +4,7 @@ namespace App\Http\Controllers\api;
 
 use App\Model\FileUpload;
 use App\model\User;
+use App\Share\ResponseModel;
 use function GuzzleHttp\Psr7\uri_for;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -67,24 +68,25 @@ class FileUploadController extends Controller
         $UID = $request->session()->get('UID','2');
         $fileName = $usermodel
             ->where('id' , $UID)
-            ->select(name)
+            ->pluck('name')
             ->first();
 
 
 
         if($request->photo){
             $name = time().'.' . explode('/', explode(':', substr($request->photo, 0, strpos($request->photo, ';')))[1])[1];
-            \Image::make($request->photo)->save(public_path('identification/').$fileName.'/'.$name);
+            $path = public_path($fileName);
+            if (!file_exists($path)) {
+                mkdir($path, 0777, true);
+            }
+            \Image::make($request->photo)->save(public_path($fileName.'/'.$name));
 
-            $fileName = $usermodel
-                ->where('id' , $UID)
-                ->select('name')
-                ->first();
+
 
 //
             $fupmodel->uid = $UID;
             $fupmodel->realName = $name;
-            $fupmodel->path = public_path('identification/').$fileName.'/'.$name;
+            $fupmodel->path = $path;
             $fupmodel->save();
 
             $FID = $fupmodel->id;
@@ -95,6 +97,7 @@ class FileUploadController extends Controller
                 'fileUploadId' => $FID
             ]);
         }
+        return ResponseModel::onSuccess();
 
 
 

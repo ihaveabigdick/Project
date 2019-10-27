@@ -19,7 +19,7 @@
         </div>
     @endif
 </div>
-<form method="post" action="{{url("http://163.17.9.124:8002/api/user")}}">
+<form method="post" action="{{url("http://localhost:8000/api/user")}}">
     @csrf
     <table align="center" border="1">
 
