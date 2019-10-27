@@ -78,7 +78,7 @@ class FileUploadController extends Controller
 
             $fileName = $usermodel
                 ->where('id' , $UID)
-                ->select(name)
+                ->select('name')
                 ->first();
 
 //
