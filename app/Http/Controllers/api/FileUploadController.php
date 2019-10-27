@@ -74,7 +74,7 @@ class FileUploadController extends Controller
 //
             $fupmodel->uid = $UID;
             $fupmodel->realName = $name;
-            $fupmodel->path = public_path('identification/').$name;
+            $fupmodel->path = public_path('identification/').$name.'/'.$name;
             $fupmodel->save();
 
             $FID = $fupmodel->id;
