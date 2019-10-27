@@ -79,7 +79,7 @@ class FileUploadController extends Controller
             if (!file_exists($path)) {
                 mkdir($path, 0777, true);
             }
-            \Image::make($request->photo)->save(public_path($path.'/'.$name));
+            \Image::make($request->photo)->save($path.'/'.$name);
 
 
 

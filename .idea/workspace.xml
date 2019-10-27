@@ -4,8 +4,6 @@
     <list default="true" id="e63178ad-3973-44ae-a401-eea7fa20382c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/api/FileUploadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/api/FileUploadController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/login/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/login/photo.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login/photo.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/FileUploadController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="99" column="42" selection-start-line="99" selection-start-column="42" selection-end-line="99" selection-end-column="42" />
+            <state relative-caret-position="424">
+              <caret line="91" column="33" lean-forward="true" selection-start-line="91" selection-start-column="33" selection-end-line="91" selection-end-column="33" />
               <folding>
                 <element signature="e#44#69#0#PHP" expanded="true" />
               </folding>
@@ -536,21 +534,7 @@
       <workItem from="1572156463268" duration="1676000" />
       <workItem from="1572166128678" duration="299000" />
       <workItem from="1572166666418" duration="1624000" />
-      <workItem from="1572183457434" duration="3243000" />
-    </task>
-    <task id="LOCAL-00044" summary="for ios">
-      <created>1563479147589</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1563479147589</updated>
-    </task>
-    <task id="LOCAL-00045" summary="for ios">
-      <created>1563479220904</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1563479220904</updated>
+      <workItem from="1572183457434" duration="4245000" />
     </task>
     <task id="LOCAL-00046" summary="for ios">
       <created>1563479755688</created>
@@ -881,11 +865,25 @@
       <option name="project" value="LOCAL" />
       <updated>1572158604623</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="https photo web">
+      <created>1572196501496</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1572196501497</updated>
+    </task>
+    <task id="LOCAL-00094" summary="https photo web">
+      <created>1572196975579</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1572196975579</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188323000" />
+    <option name="totallyTimeSpent" value="189325000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1245,8 +1243,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/FileUploadController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="99" column="42" selection-start-line="99" selection-start-column="42" selection-end-line="99" selection-end-column="42" />
+        <state relative-caret-position="424">
+          <caret line="91" column="33" lean-forward="true" selection-start-line="91" selection-start-column="33" selection-end-line="91" selection-end-column="33" />
           <folding>
             <element signature="e#44#69#0#PHP" expanded="true" />
           </folding>
