@@ -52,7 +52,8 @@ class UserController extends Controller
                 'id',
                 'name',
                 'phone',
-                'email'
+                'email',
+                'birthday'
             );
 //        dd($data->get());
 //            ->where('isDelete','<>',true);
