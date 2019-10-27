@@ -86,7 +86,7 @@ class UserController extends Controller
                 $userModel->sex = 1;
             else
                 $userModel->sex = 2;
-
+            $userModel->birthday = $request->get('birthday');
             $userModel->email = $request->get('email');
             $userModel->phone = $request->get('phone');
             $userModel->token = $request->get('token');
@@ -98,8 +98,6 @@ class UserController extends Controller
 
             return \redirect()->intended('/photo')->with(Session::put('UID',$id));
         } else
-
-
         return redirect()->back()->with(Session::put('error','密碼輸入不一致'));
 
     }

@@ -30,6 +30,9 @@ class CreateUsersTable extends Migration
             $table->integer('sex')
                 ->nullable()
                 ->comment('性別');
+            $table->date('birthday')
+                ->nullable()
+                ->comment('生日');
             $table->string('email',50)
                 ->nullable()
                 ->comment('電子信箱')
@@ -48,6 +51,9 @@ class CreateUsersTable extends Migration
             $table->integer('fileUploadId')->unsigned()
                 ->nullable()
                 ->comment('檔案id');
+            $table->integer('totalCost')
+                ->comment('總花費')
+                ->nullable();
             $table->timestamps();
 //
             $table->foreign('fileUploadId')

@@ -46,6 +46,10 @@
             </td>
         </tr>
         <tr>
+            <td>生日：</td>
+            <td><input type="date" name="birthday" required="required" /></td>
+        </tr>
+        <tr>
             <td>電子信箱</td>
             <td><input name="email" type="email" placeholder="請輸入電子信箱" required></td>
         </tr>

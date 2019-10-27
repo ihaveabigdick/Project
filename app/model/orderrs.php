@@ -7,4 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class orderrs extends Model
 {
     //
+    public $timestamps = true;
+
 }
