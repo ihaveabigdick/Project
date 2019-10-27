@@ -79,14 +79,14 @@ class FileUploadController extends Controller
             if (!file_exists($path)) {
                 mkdir($path, 0777, true);
             }
-            \Image::make($request->photo)->save(public_path($fileName.'/'.$name));
+            \Image::make($request->photo)->save(public_path($path.'/'.$name));
 
 
 
 //
             $fupmodel->uid = $UID;
             $fupmodel->realName = $name;
-            $fupmodel->path = $path;
+            $fupmodel->path = $path.'/'.$name;
             $fupmodel->save();
 
             $FID = $fupmodel->id;
@@ -97,7 +97,6 @@ class FileUploadController extends Controller
                 'fileUploadId' => $FID
             ]);
         }
-        return ResponseModel::onSuccess();
 
 
 
