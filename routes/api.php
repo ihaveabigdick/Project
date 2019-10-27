@@ -49,6 +49,8 @@ Route::post('/orderInfo','Api\OrderController@createInfo');
 Route::put('/order/{id}','Api\OrderController@update');
 Route::put('/orderFinish/{id}','Api\OrderController@finish');
 
+Route::post('/orderrr','Api\OrderrrController@create');
+
 
 
 
