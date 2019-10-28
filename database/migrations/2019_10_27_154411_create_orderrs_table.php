@@ -20,6 +20,8 @@ class CreateOrderrsTable extends Migration
             $table->string('mealName',10)
                 ->comment('餐點名稱')
                 ->collation('utf8_unicode_ci');
+            $table->integer('mealPrice')
+                ->comment('餐點價格');
             $table->integer('count')
                 ->comment('餐點數量');
             $table->string('remark',50)

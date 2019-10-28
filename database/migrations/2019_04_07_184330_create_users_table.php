@@ -53,7 +53,7 @@ class CreateUsersTable extends Migration
                 ->comment('檔案id');
             $table->integer('totalCost')
                 ->comment('總花費')
-                ->nullable();
+                ->default(0);
             $table->timestamps();
 //
             $table->foreign('fileUploadId')
