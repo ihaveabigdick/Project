@@ -65,7 +65,7 @@ class FileUploadController extends Controller
 
         $usermodel = New User();
         $fupmodel = New FileUpload();
-        $UID = $request->session()->get('UID','2');
+        $UID = $request->session()->get('UID','5');
         $fileName = $usermodel
             ->where('id' , $UID)
             ->pluck('name')
@@ -75,7 +75,7 @@ class FileUploadController extends Controller
 
         if($request->photo){
             $name = time().'.' . explode('/', explode(':', substr($request->photo, 0, strpos($request->photo, ';')))[1])[1];
-            $path = public_path($fileName);
+            $path = public_path('identification'.'/'.$fileName);
             if (!file_exists($path)) {
                 mkdir($path, 0777, true);
             }
