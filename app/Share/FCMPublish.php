@@ -15,44 +15,48 @@ use Psr\Http\Message\ResponseInterface;
 class FCMPublish
 {
 
-    protected  $token = '';
+    protected $token = '';
     private $client;
-    function __construct() {
+
+    function __construct()
+    {
 
 
     }
-    public function publish($token,$data,$serviceId,$onSuccess = null,$onFile = null){
+
+    public function publish($token, $data, $serviceId, $onSuccess = null, $onFile = null)
+    {
         $notification = [
             'title' => 'Zenbo餐廳系統推播通知',
-            'body' =>$data,
+            'body' => $data,
             'sound' => true,
-            'click_action'=>'FCM_PLUGIN_ACTIVITY'
+            'click_action' => 'FCM_PLUGIN_ACTIVITY'
         ];
 
-        $extraNotificationData = ["message" => $notification,"serviceId" =>$serviceId];
-        $client = new \GuzzleHttp\Client(['headers' =>[
-            'Authorization'=>'key=AIzaSyB2RsRqHmmSwBjtEAQ2oOJ9YTbMCGjmR1Y',
-            'Content-Type'=>'application/json'
+        $extraNotificationData = ["message" => $notification, "serviceId" => $serviceId];
+        $client = new \GuzzleHttp\Client(['headers' => [
+            'Authorization' => 'key=AIzaSyCCgISamcqwOC6cO--bFnCL3JqUpc2RABc',
+            'Content-Type' => 'application/json'
         ],
             'json' => [
                 //'registration_ids' => $tokenList, //multple token array
-                'registration_ids'        => $token, //single token
+                'registration_ids' => $token, //single token
                 'notification' => $notification,
                 'data' => $extraNotificationData,
-                "priority"=>"high"
+                "priority" => "high"
             ]]);
         $request = new \GuzzleHttp\Psr7\Request('post', 'https://fcm.googleapis.com/fcm/send'
         );
         $promise = $client->sendAsync($request)->then(function ($response) {
             // echo 'I completed! ' . $response->getBody();
         });
-        if($onSuccess!=null&&$onFile!=null){
+        if ($onSuccess != null && $onFile != null) {
             $promise->then(
                 $onSuccess,
                 $onFile
             );
             $promise->wait();
-        }else{
+        } else {
             $promise->then(
                 function (ResponseInterface $res) {
                     echo $res->getStatusCode() . "\n";
