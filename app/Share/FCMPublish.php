@@ -35,7 +35,7 @@ class FCMPublish
 
         $extraNotificationData = ["message" => $notification, "serviceId" => $serviceId];
         $client = new \GuzzleHttp\Client(['headers' => [
-            'Authorization' => 'key=AIzaSyCCgISamcqwOC6cO--bFnCL3JqUpc2RABc',
+            'Authorization' => 'AIzaSyDOS6n6oswOFX-w9fBkHlmo8Ws8JDxKZj8',
             'Content-Type' => 'application/json'
         ],
             'json' => [
