@@ -112,7 +112,7 @@ class FileUploadController extends Controller
 
                     shell_exec('C:\\Users\zenbo\Desktop\Jay\face.bat');
 
-
+                    return ResponseModel::onSuccess('上傳成功');
                 }
             }
 
