@@ -51,7 +51,7 @@ class ServiceController extends Controller
 
         $noti->toMultipleDevice($fcmm, $title, $body);
 
-        return ResponseModel::onSuccess('推播成功');
+        return ResponseModel::onSuccess($body);
 
     }
 
