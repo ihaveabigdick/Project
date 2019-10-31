@@ -110,7 +110,7 @@ class FileUploadController extends Controller
 
                     $file->move(public_path('/img'), $filename); //移動至指定目錄
 
-                    shell_exec('C:\\Users\zenbo\Desktop\Jay\face.bat');
+//                    shell_exec('C:\\Users\zenbo\Desktop\Jay\face.bat');
 
                     return ResponseModel::onSuccess('上傳成功');
                 }
