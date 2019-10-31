@@ -14,18 +14,20 @@ use PhpParser\Node\Expr\New_;
 class FileUploadController extends Controller
 {
     //
-    function fileDown ($id){
-        $fileModel =new FileUpload();
-        $file=$fileModel->where('realName',$id)->first();
-        return response()->download($file->path ,$file->uploadName);
+    function fileDown($id)
+    {
+        $fileModel = new FileUpload();
+        $file = $fileModel->where('realName', $id)->first();
+        return response()->download($file->path, $file->uploadName);
     }
 
-    function fileUpload(Request $request){
+    function fileUpload(Request $request)
+    {
 
 
         if ($request->hasFile('file')) {
             $file = $request->file('file');  //獲取UploadFile例項
-            if ( $file->isValid()) { //判斷檔案是否有效
+            if ($file->isValid()) { //判斷檔案是否有效
                 $fileModel = new FileUpload();
 
                 $filename = $file->getClientOriginalName(); //檔案原名稱
@@ -35,9 +37,8 @@ class FileUploadController extends Controller
                 $fileModel->uploadName = $file->getClientOriginalName();
                 $fileModel->uploadType = $file->getClientOriginalExtension();
                 $fileModel->realName = $filename;
-                $fileModel->path = public_path('img').$filename;
+                $fileModel->path = public_path('img') . $filename;
                 $fileModel->save();
-
 
 
                 $file->move(public_path('/img'), $filename); //移動至指定目錄
@@ -58,48 +59,65 @@ class FileUploadController extends Controller
 //        return response()->json(['url'=>$photoUrl],200);
 
 
-
     }
 
-    function fileUploadBase64(Request $request){
+    function fileUploadBase64(Request $request)
+    {
 
         $usermodel = New User();
         $fupmodel = New FileUpload();
-        $UID = $request->session()->get('UID','5');
+        $UID = $request->session()->get('UID', '5');
         $fileName = $usermodel
-            ->where('id' , $UID)
+            ->where('id', $UID)
             ->pluck('name')
             ->first();
 
 
-
-        if($request->photo){
-            $name = time().'.' . explode('/', explode(':', substr($request->photo, 0, strpos($request->photo, ';')))[1])[1];
-            $path = public_path('identification'.'/'.$fileName);
+        if ($request->photo) {
+            $name = time() . '.' . explode('/', explode(':', substr($request->photo, 0, strpos($request->photo, ';')))[1])[1];
+            $path = public_path('identification' . '/' . $fileName);
             if (!file_exists($path)) {
                 mkdir($path, 0777, true);
             }
-            \Image::make($request->photo)->save($path.'/'.$name);
-
+            \Image::make($request->photo)->save($path . '/' . $name);
 
 
 //
             $fupmodel->uid = $UID;
             $fupmodel->realName = $name;
-            $fupmodel->path = $path.'/'.$name;
+            $fupmodel->path = $path . '/' . $name;
             $fupmodel->save();
 
             $FID = $fupmodel->id;
             $data = $usermodel
-                ->where('id' , $UID );
+                ->where('id', $UID);
 
             $data->update([
                 'fileUploadId' => $FID
             ]);
         }
 
+        function faceID(Request $request)
+        {
+
+            if ($request->hasFile('file')) {
+                $file = $request->file('file');  //獲取UploadFile例項
+                if ($file->isValid()) { //判斷檔案是否有效
+
+                    $filename = $file->getClientOriginalName(); //檔案原名稱
+                    $extension = $file->getClientOriginalExtension(); //副檔名
+                    $filename = time() . "." . $extension;    //重新命名
+
+                    $file->move(public_path('/img'), $filename); //移動至指定目錄
+
+                    shell_exec('C:\\Users\zenbo\Desktop\Jay\face.bat');
 
 
+                }
+            }
+
+        }
     }
+
 
 }
