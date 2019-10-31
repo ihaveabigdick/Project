@@ -96,27 +96,27 @@ class FileUploadController extends Controller
                 'fileUploadId' => $FID
             ]);
         }
+    }
 
-        function faceID(Request $request)
-        {
+    function faceID(Request $request)
+    {
 
-            if ($request->hasFile('file')) {
-                $file = $request->file('file');  //獲取UploadFile例項
-                if ($file->isValid()) { //判斷檔案是否有效
+        if ($request->hasFile('file')) {
+            $file = $request->file('file');  //獲取UploadFile例項
+            if ($file->isValid()) { //判斷檔案是否有效
 
-                    $filename = $file->getClientOriginalName(); //檔案原名稱
-                    $extension = $file->getClientOriginalExtension(); //副檔名
-                    $filename = time() . "." . $extension;    //重新命名
+                $filename = $file->getClientOriginalName(); //檔案原名稱
+                $extension = $file->getClientOriginalExtension(); //副檔名
+                $filename = time() . "." . $extension;    //重新命名
 
-                    $file->move(public_path('/img'), $filename); //移動至指定目錄
+                $file->move(public_path('/img'), $filename); //移動至指定目錄
 
 //                    shell_exec('C:\\Users\zenbo\Desktop\Jay\face.bat');
 
-                    return ResponseModel::onSuccess('上傳成功');
-                }
+                return ResponseModel::onSuccess('上傳成功');
             }
-
         }
+
     }
 
 
