@@ -73,7 +73,7 @@ class Notification extends Model
 
         $downstreamResponse = FCM::sendTo($tokens, $option, $notification, $data);
 
-        $downstreamResponse->numberSuccess();
+        $downstreamResponse->numberSucceOss();
         $downstreamResponse->numberFailure();
         $downstreamResponse->numberModification();
 

@@ -36,7 +36,7 @@ class ServiceController extends Controller
         $noti = new Notification();
         $noti->toSingleDevice($fcmm, $id, $title, $body);
 
-        return ResponseModel::onSuccess('推播成功');
+        return ResponseModel::onSuccess($body);
 
     }
 

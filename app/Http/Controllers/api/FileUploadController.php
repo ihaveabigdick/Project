@@ -112,6 +112,7 @@ class FileUploadController extends Controller
                 $file->move(public_path('/img'), $filename); //移動至指定目錄
 
 //                    shell_exec('C:\\Users\zenbo\Desktop\Jay\face.bat');
+                File::delete($file);
 
                 return ResponseModel::onSuccess('上傳成功');
             }
