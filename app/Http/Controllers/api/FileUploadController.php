@@ -8,8 +8,11 @@ use App\Share\ResponseModel;
 use function GuzzleHttp\Psr7\uri_for;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\File;
 use mysql_xdevapi\Session;
 use PhpParser\Node\Expr\New_;
+use Symfony\Component\Process\Exception\ProcessFailedException;
+use Symfony\Component\Process\Process;
 
 class FileUploadController extends Controller
 {
@@ -112,9 +115,18 @@ class FileUploadController extends Controller
                 $file->move(public_path('/img'), $filename); //移動至指定目錄
 
 //                    shell_exec('C:\\Users\zenbo\Desktop\Jay\face.bat');
-                File::delete($file);
+                $process = new Process(['python', public_path('me.py')]);
+                $process->run();
 
-                return ResponseModel::onSuccess('上傳成功');
+// executes after the command finishes
+                if (!$process->isSuccessful()) {
+                    throw new ProcessFailedException($process);
+                }
+                $result = $process->getOutput();
+
+                File::delete(public_path('/img' . '/' . $filename));
+
+                return ResponseModel::onSuccess($result);
             }
         }
 
