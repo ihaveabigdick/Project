@@ -115,7 +115,8 @@ class FileUploadController extends Controller
                 $file->move(public_path('/img'), $filename); //移動至指定目錄
 
 //                    shell_exec('C:\\Users\zenbo\Desktop\Jay\face.bat');
-                $process = new Process(['python', public_path('me.py')]);
+//                $process = new Process(['python', public_path('me.py')]);
+                $process = new Process('python --version');
                 $process->run();
 
 // executes after the command finishes
@@ -123,7 +124,7 @@ class FileUploadController extends Controller
                     throw new ProcessFailedException($process);
                 }
                 $result = $process->getOutput();
-
+                $env = $process->getEnv();
                 File::delete(public_path('/img' . '/' . $filename));
 
                 return ResponseModel::onSuccess($result);
