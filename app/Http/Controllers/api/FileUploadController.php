@@ -118,17 +118,23 @@ class FileUploadController extends Controller
 //                    shell_exec('C:\\Users\zenbo\Desktop\Jay\face.bat');
                 $process = new Process(['python', public_path('me.py')]);
 //                $process = new Process('call C:\\Users\zenbo\Desktop\Jay\face.bat');
-                $process->run();
+                $process->run();//啟動程序
 
                 if (!$process->isSuccessful()) {
-                    throw new ProcessFailedException($process);
+                    throw new ProcessFailedException($process);//拋出錯誤報告
                 }
-                $result = $process->getOutput();
-                File::delete(public_path('/img' . '/' . $filename));
-                $result1 = explode("'", $result);
+                $result = $process->getOutput();//取得程式結果
+                File::delete(public_path('/img' . '/' . $filename));//刪除檔案
+                $result1 = explode("'", $result);//將字串斷開取出編碼資料
                 $ans = base64_decode($result1[1]);
 
-                return ResponseModel::onSuccess($ans);
+                $userModel = new User();
+                $user =$userModel
+                    ->where('name',$ans)
+                    ->first();
+
+
+                return ResponseModel::onSuccess($user);
 
 
             }
