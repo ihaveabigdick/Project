@@ -75,6 +75,15 @@ class UserController extends Controller
         $ps = $request->get('password');
         $psc = $request->get('password_check');
         $userModel = new User();
+
+
+        $flage = $userModel
+            ->where('account',$request->get('account'))
+            ->first()== null?true:false;
+        if(!$flage)
+            return redirect()->back()->with(Session::put('error','此帳號已被註冊過'));
+
+
         $checkName = $request->get('name');
 
         $username = $userModel
@@ -85,8 +94,6 @@ class UserController extends Controller
             ->where('name','like',$checkName.'%')
             ->select('name')
             ->count();
-        dd($userCount);
-
 
 
         if ($ps == $psc) {
@@ -114,7 +121,25 @@ class UserController extends Controller
                 return \redirect()->intended('/photo')->with(Session::put('UID', $id));
             }
             else{
+                $userModel->account = $request->get('account');
+                $userModel->password = $request->get('password');
+                $userModel->name = $checkName.$userCount;
+                $sex = $request->get('sex');
+                if ($sex == 'male')
+                    $userModel->sex = 1;
+                else
+                    $userModel->sex = 2;
+                $userModel->birthday = $request->get('birthday');
+                $userModel->email = $request->get('email');
+                $userModel->phone = $request->get('phone');
+                $userModel->token = $request->get('token');
+                //        $userModel->fileUploadId=$request->get('fileUploadId');
+                $userModel->save();
+                $id = $userModel->id;
 
+                Session::flush();
+
+                return \redirect()->intended('/photo')->with(Session::put('UID', $id));
             }
         } else
         return redirect()->back()->with(Session::put('error','密碼輸入不一致'));
