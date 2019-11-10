@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e63178ad-3973-44ae-a401-eea7fa20382c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/api/FileUploadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/api/FileUploadController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/api/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/api/UserController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,14 +38,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/FileUploadController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="128" selection-start-line="128" selection-end-line="128" />
+            <state relative-caret-position="569">
+              <caret line="130" column="32" lean-forward="true" selection-start-line="130" selection-start-column="32" selection-end-line="130" selection-end-column="32" />
               <folding>
                 <element signature="e#44#69#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/UserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="92" column="36" lean-forward="true" selection-start-line="92" selection-start-column="36" selection-end-line="92" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -129,7 +135,6 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_10_27_174828_create_orderrs_table.php" />
         <option value="$PROJECT_DIR$/resources/views/login/index.blade.php" />
         <option value="$PROJECT_DIR$/app/model/orderrs.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/api/UserController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_07_184330_create_users_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_10_27_154411_create_orderrs_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/api/OrderrrController.php" />
@@ -141,6 +146,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/api/ServiceController.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/api/FileUploadController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/api/UserController.php" />
       </list>
     </option>
   </component>
@@ -242,9 +248,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="-1280" />
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -411,21 +416,7 @@
       <workItem from="1572537153398" duration="4202000" />
       <workItem from="1572887560234" duration="1178000" />
       <workItem from="1572970632670" duration="5000" />
-      <workItem from="1573099492429" duration="19805000" />
-    </task>
-    <task id="LOCAL-00065" summary="update base64 function">
-      <created>1565455360548</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1565455360548</updated>
-    </task>
-    <task id="LOCAL-00066" summary="update base64 function">
-      <created>1565455582546</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1565455582546</updated>
+      <workItem from="1573099492429" duration="22955000" />
     </task>
     <task id="LOCAL-00067" summary="update base64 function">
       <created>1565455837001</created>
@@ -756,11 +747,25 @@
       <option name="project" value="LOCAL" />
       <updated>1573127081589</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="FaceId傳值成功">
+      <created>1573371842211</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1573371842211</updated>
+    </task>
+    <task id="LOCAL-00115" summary="利用辨識結果取出用戶資料">
+      <created>1573409030967</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1573409030967</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="230005000" />
+    <option name="totallyTimeSpent" value="233155000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -772,16 +777,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1280" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.17528272" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.115548454" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32970297" />
-      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49596122" visible="true" weight="0.2109589" />
+      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49574015" visible="true" weight="0.15247525" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50403875" side_tool="true" visible="true" weight="0.2109589" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5042598" side_tool="true" visible="true" weight="0.15247525" />
       <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.49946752" weight="0.27142859" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="6" />
@@ -833,19 +838,11 @@
     <MESSAGE value="add orderrr function totalCost" />
     <MESSAGE value="change file upload controller base64 save path" />
     <MESSAGE value="change FCM 應用" />
-    <option name="LAST_COMMIT_MESSAGE" value="change FCM 應用" />
+    <MESSAGE value="FaceId傳值成功" />
+    <MESSAGE value="利用辨識結果取出用戶資料" />
+    <option name="LAST_COMMIT_MESSAGE" value="利用辨識結果取出用戶資料" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/OrderController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding>
-            <element signature="e#44#64#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/login/photo.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-709">
@@ -1149,11 +1146,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/FileUploadController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="128" selection-start-line="128" selection-end-line="128" />
+        <state relative-caret-position="569">
+          <caret line="130" column="32" lean-forward="true" selection-start-line="130" selection-start-column="32" selection-end-line="130" selection-end-column="32" />
           <folding>
             <element signature="e#44#69#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="92" column="36" lean-forward="true" selection-start-line="92" selection-start-column="36" selection-end-line="92" selection-end-column="36" />
         </state>
       </provider>
     </entry>

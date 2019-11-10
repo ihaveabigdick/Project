@@ -74,30 +74,48 @@ class UserController extends Controller
             return ResponseModel::onFail('資料異常', ResponseModel::$DEFECT, $validator->errors());
         $ps = $request->get('password');
         $psc = $request->get('password_check');
+        $userModel = new User();
+        $checkName = $request->get('name');
+
+        $username = $userModel
+            ->where('name',$checkName)
+            ->first();
+
+        $userCount = $userModel
+            ->where('name','like',$checkName.'%')
+            ->select('name')
+            ->count();
+        dd($userCount);
+
+
 
         if ($ps == $psc) {
-            //驗證帳號是否已被註冊
-            $userModel = new User();
-            //儲存使用者資訊
-            $userModel->account = $request->get('account');
-            $userModel->password = $request->get('password');
-            $userModel->name = $request->get('name');
-            $sex = $request->get('sex');
-            if ($sex == 'male')
-                $userModel->sex = 1;
-            else
-                $userModel->sex = 2;
-            $userModel->birthday = $request->get('birthday');
-            $userModel->email = $request->get('email');
-            $userModel->phone = $request->get('phone');
-            $userModel->token = $request->get('token');
-            //        $userModel->fileUploadId=$request->get('fileUploadId');
-            $userModel->save();
-            $id = $userModel->id;
+            if ($username == null) {
+                //驗證帳號是否已被註冊
+                //儲存使用者資訊
+                $userModel->account = $request->get('account');
+                $userModel->password = $request->get('password');
+                $userModel->name = $request->get('name');
+                $sex = $request->get('sex');
+                if ($sex == 'male')
+                    $userModel->sex = 1;
+                else
+                    $userModel->sex = 2;
+                $userModel->birthday = $request->get('birthday');
+                $userModel->email = $request->get('email');
+                $userModel->phone = $request->get('phone');
+                $userModel->token = $request->get('token');
+                //        $userModel->fileUploadId=$request->get('fileUploadId');
+                $userModel->save();
+                $id = $userModel->id;
 
-            Session::flush();
+                Session::flush();
 
-            return \redirect()->intended('/photo')->with(Session::put('UID',$id));
+                return \redirect()->intended('/photo')->with(Session::put('UID', $id));
+            }
+            else{
+
+            }
         } else
         return redirect()->back()->with(Session::put('error','密碼輸入不一致'));
 
