@@ -104,6 +104,7 @@ class FileUploadController extends Controller
     function faceID(Request $request)
     {
 
+
         if ($request->hasFile('file')) {
             $file = $request->file('file');  //獲取UploadFile例項
             if ($file->isValid()) { //判斷檔案是否有效
@@ -115,19 +116,21 @@ class FileUploadController extends Controller
                 $file->move(public_path('/img'), $filename); //移動至指定目錄
 
 //                    shell_exec('C:\\Users\zenbo\Desktop\Jay\face.bat');
-//                $process = new Process(['python', public_path('me.py')]);
-                $process = new Process('python --version');
+                $process = new Process(['python', public_path('me.py')]);
+//                $process = new Process('call C:\\Users\zenbo\Desktop\Jay\face.bat');
                 $process->run();
 
-// executes after the command finishes
                 if (!$process->isSuccessful()) {
                     throw new ProcessFailedException($process);
                 }
                 $result = $process->getOutput();
-                $env = $process->getEnv();
                 File::delete(public_path('/img' . '/' . $filename));
+                $result1 = explode("'", $result);
+                $ans = base64_decode($result1[1]);
 
-                return ResponseModel::onSuccess($result);
+                return ResponseModel::onSuccess($ans);
+
+
             }
         }
 
