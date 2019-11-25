@@ -15,12 +15,22 @@ class OrderrrController extends Controller
     function create(Request $request){
         $userModel = new User();
 
+        $orderid = Orderrs::max('orderId');
+
+        if ($orderid == null)
+            $orderid = 1 ;
+        elseif ($orderid != null)
+            $orderid += 1;
+
+
         $total = 0;
         $data = json_decode($request->getContent(),true);
         $insertData = [];
         foreach($data as $item){
             $item['created_at'] = Carbon::now();
             $item['updated_at'] = Carbon::now();
+            $item['orderId'] = $orderid;
+            $item['finish_time'] = null;
             $id = $item['userId'];
             $cc = $item['count'];
             $pp = $item['mealPrice'];

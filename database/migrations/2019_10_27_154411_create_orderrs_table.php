@@ -29,10 +29,20 @@ class CreateOrderrsTable extends Migration
                 ->collation('utf8_unicode_ci')
                 ->comment('備註');
             $table->string('status',10)
+                ->nullable()
                 ->collation('utf8_unicode_ci')
                 ->comment('出餐狀態');
             $table->integer('userId')->unsigned()
                 ->comment('使用者ID');
+            $table->integer('orderId')
+                ->comment('訂單ID');
+            $table->integer('isFinished')
+                ->default(0)
+                ->comment('已完成狀態');
+            $table->dateTime('finish_time')
+                ->nullable()
+                ->default(null)
+                ->collation('utf8_unicode_ci');
             $table->timestamps();
 
             $table->foreign('userId')

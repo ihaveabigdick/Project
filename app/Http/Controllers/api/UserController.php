@@ -78,20 +78,20 @@ class UserController extends Controller
 
 
         $flage = $userModel
-            ->where('account',$request->get('account'))
-            ->first()== null?true:false;
-        if(!$flage)
-            return redirect()->back()->with(Session::put('error','此帳號已被註冊過'));
+            ->where('account', $request->get('account'))
+            ->first() == null ? true : false;
+        if (!$flage)
+            return redirect()->back()->with(Session::put('error', '此帳號已被註冊過'));
 
 
         $checkName = $request->get('name');
 
         $username = $userModel
-            ->where('name',$checkName)
+            ->where('name', $checkName)
             ->first();
 
         $userCount = $userModel
-            ->where('name','like',$checkName.'%')
+            ->where('name', 'like', $checkName . '%')
             ->select('name')
             ->count();
 
@@ -119,11 +119,10 @@ class UserController extends Controller
                 Session::flush();
 
                 return \redirect()->intended('/photo')->with(Session::put('UID', $id));
-            }
-            else{
+            } else {
                 $userModel->account = $request->get('account');
                 $userModel->password = $request->get('password');
-                $userModel->name = $checkName.$userCount;
+                $userModel->name = $checkName . $userCount;
                 $sex = $request->get('sex');
                 if ($sex == 'male')
                     $userModel->sex = 1;
@@ -142,9 +141,10 @@ class UserController extends Controller
                 return \redirect()->intended('/photo')->with(Session::put('UID', $id));
             }
         } else
-        return redirect()->back()->with(Session::put('error','密碼輸入不一致'));
+            return redirect()->back()->with(Session::put('error', '密碼輸入不一致'));
 
     }
+
     //
 
     function get($id)
